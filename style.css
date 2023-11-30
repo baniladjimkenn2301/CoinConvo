@@ -1,19 +1,62 @@
 body {
-    font-family: Arial, sans-serif;
+    background: radial-gradient(circle at center, #0C3953, #0C3953, #0873F4, #0C3953, #0C3953);
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.maincontainer {
+    height: 680px;
+    width: 870px;
+    border-radius: 50px;
+    align-items: center;
+    display: flex;
+    flex-direction: column; /* Center contents vertically */
     text-align: center;
-    margin: 20px;
-    background: #031321;
+    padding: 20px 30px;
+    background-color: #ffff71;
 }
 
-
-#numberLabel {
-    font-size: 24px;
-    margin: 10px;
-}
-
-button {
-    font-size: 16px;
-    margin: 5px;
-    padding: 10px;
+.btn {
+    padding: 10px 60px;
+    background: #008000;
+    border: 0;
+    outline: none;
     cursor: pointer;
+    font-size: 22px;
+    font-family: 'Futura', sans-serif;
+    font-weight: bold;
+    color: #ffffff;
+    border-radius: 30px;
+    margin-top: 10px;
+}
+
+.welcome-text,
+.coinconvo-text{
+    margin: 0;
+    font-size: 34px;
+}
+
+.welcome-text h2{
+    padding: 110px 0px 10px 0px;
+    margin: 0px;
+}
+
+.coinconvo-text {
+    margin: 20px 0; /* Adjust top and bottom margins as needed */
+    text-align: center; /* Center text horizontally */
+}
+
+.coinconvo-text h2,
+.coinconvo-text p {
+    margin: 0; /* Remove default margins for the h2 and p elements inside .coinconvo-text */
+}
+
+.center-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0%;
+    margin: 0px;
 }
