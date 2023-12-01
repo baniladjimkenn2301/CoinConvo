@@ -16,7 +16,16 @@
             <h2 style="font-family: 'Futura'; font-weight: bold;">COINCONVO</h2>
             <p style="font-family: 'Gotham';">DENOMINATION CHANGER</p>
         </div>
-        <button type="submit" class="btn">START</button>
+        <button type="submit" class="btn" onclick="openPopup()">START</button>
+    </div>
+    <div class="popupcredit" id="popup">
+        <img src="Assets/creditLogo.png"  >
+        <h2 class="header">INPUT BILL</h2>
+        <p>Please input your bill or coin in the deposit module</p>
+        <div class="creditInput">
+        <label>Php</label>
+        </div>
+        <button type="button" onClick="closePopup()">DONE</button>
     </div>
     <script src="script.js"></script>
 </body>
