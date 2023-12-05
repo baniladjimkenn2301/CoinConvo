@@ -103,6 +103,7 @@ margin-top: -115px;
     margin-left: 90px;
     font-family: fantasy;
 }
+
 .popupcredit button{
     width: 100%;
     margin-top: 50px;
@@ -137,3 +138,42 @@ margin-top: -115px;
     transform: translate(-50%,-50%) scale(1);
 }
 
+/*<---------------------------------------- for coins availabale ----->*/
+/* .inline-h3 {
+    display: inline-block; 
+    margin-right: 10px;  Optional: for some space between the headings 
+} */
+.coin-input-group {
+    margin-bottom: 20px; /* Space between each group of header and input */
+}
+.coin-input {
+    background-color: #ffff71;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    width: 75px;
+    height: 50px;   
+}
+.usercoinsselector{  
+    height: 680px;
+    width: 870px;
+    border-radius: 50px;
+    align-items: center;
+    display: flex;
+    flex-direction: column; /* Center contents vertically */
+    text-align: center;
+    padding: 20px 30px;
+    background-color: #ffff71;
+    position: absolute;
+    /* visibility: hidden; */
+}
+.titleheader img{
+    margin-left: 21px;
+}
+.coinsavailable h2{
+    font-size: 28px;
+    font-family: sans-serif;
+}
+.open-coinselector{
+    visibility: visible;
+}

@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    
     <title>Landing Page</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="maincontainer">
@@ -22,11 +23,39 @@
         <img src="Assets/creditLogo.png"  >
         <h2 class="header">INPUT BILL</h2>
         <p>Please input your bill or coin in the deposit module</p>
-        <div class="creditInput">
-        <label>Php</label>
+        <div class="total-amount">
+            <label>PHP: <span class="php-value"></span></label>
         </div>
         <button type="button" onClick="closePopup()">DONE</button>
     </div>
+    <!-- <----for coin denomination-->
+    <div class="usercoinsselector" id="coinselector">
+        <div class="titleheader">
+            <img src="Assets/headertitle.png" alt="headertitle">
+        </div>
+        <div class="coinsavailable">
+            <h2>Available Coins</h2>
+            <div class="coin-input-group">
+                <h3 class="inline-h3">PHP 1</h3>
+                <input type="number" class="coin-input" />
+            </div>
+            <div class="coin-input-group">
+                <h3 class="inline-h3">PHP 5</h3>
+                <input type="number" class="coin-input" />
+            </div>
+            <div class="coin-input-group">
+                <h3 class="inline-h3">PHP 10</h3>
+                <input type="number" class="coin-input" />
+            </div>
+            <div class="coin-input-group">
+                <h3 class="inline-h3">PHP 20</h3>
+                <input type="number" class="coin-input" />
+            </div>
+        </div>
+    </div>
+    <script src= "https://www.gstatic.com/firebasejs/8.4.1/firebase-app.js"></script>
+    <script src= "https://www.gstatic.com/firebasejs/8.4.1/firebase-database.js"></script>
+    <script src= "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
