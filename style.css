@@ -144,7 +144,9 @@ margin-top: -115px;
     margin-right: 10px;  Optional: for some space between the headings 
 } */
 .coin-input-group {
-    margin-bottom: 20px; /* Space between each group of header and input */
+    margin-bottom: 20px;
+    margin-left: 132px;
+    display: flex; /* Space between each group of header and input */
 }
 .coin-input {
     background-color: #ffff71;
@@ -170,10 +172,26 @@ margin-top: -115px;
 .titleheader img{
     margin-left: 21px;
 }
+.coinsavailable{
+    background: #EEB600;
+   
+}
 .coinsavailable h2{
     font-size: 28px;
-    font-family: sans-serif;
+    font-family: system-ui;
+    color: #ffffff;
 }
 .open-coinselector{
     visibility: visible;
 }
+.for1php, .for5php, .for10php, .for20php {
+    margin-right: 100px; /* Adjust the value as needed */
+    background: #ffff71;
+}
+.labels{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
