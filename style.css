@@ -167,7 +167,7 @@ margin-top: -115px;
     padding: 20px 30px;
     background-color: #ffff71;
     position: absolute;
-    /* visibility: hidden; */
+    visibility: hidden;
 }
 .titleheader img{
     margin-left: 21px;

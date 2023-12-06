@@ -10,11 +10,11 @@ var firebaseConfig = {
   };
   //Initialize Database
   firebase.initializeApp(firebaseConfig);
+  var database = firebase.database();
+  var totalAmountRef = database.ref('totalAmount');
+  var storedAmountRef = database.ref('storedAmount');
 
   $(document).ready(function () {
-    var database = firebase.database();
-    var totalAmountRef = database.ref('totalAmount');
-  
     // Check if the 'totalAmount' node exists, if not, initialize it with a default value
     totalAmountRef.once('value', function (snapshot) {
       if (!snapshot.exists()) {
@@ -35,11 +35,21 @@ var firebaseConfig = {
   });
 
 let popup= document.getElementById("popup");
+let coinSelector = document.getElementById("coinselector");
+
 function openPopup(){
-    popup.classList.add("open-popup")
+  popup.classList.add("open-popup");
 }
-function closePopup(){
-    popup.classList.remove("open-popup")
+
+function closePopup() {
+  totalAmountRef.once('value').then(function(snapshot) {
+      var currentAmount = snapshot.val();
+      storedAmountRef.set(currentAmount); // Store the current amount
+      totalAmountRef.set(0); // Reset total amount to 0
+  });
+
+  popup.classList.remove("open-popup");
+  coinSelector.style.visibility = "visible"; // Make the coin selector visible
 }
 
 // Add the following code to update Firebase when a new bill is detected
@@ -50,3 +60,4 @@ var totalAmountRef = database.ref('totalAmount');
 function updateTotalAmountOnFirebase(newTotalAmount) {
   totalAmountRef.set(newTotalAmount);
 }
+
