@@ -173,8 +173,10 @@ margin-top: -115px;
     margin-left: 21px;
 }
 .coinsavailable{
+    border: 136px;
     background: #EEB600;
-   
+    border-radius: 30px;
+    padding: 10px 60px;   
 }
 .coinsavailable h2{
     font-size: 28px;
@@ -184,13 +186,54 @@ margin-top: -115px;
 .open-coinselector{
     visibility: visible;
 }
-.for1php, .for5php, .for10php, .for20php {
-    margin-right: 100px; /* Adjust the value as needed */
-    background: #ffff71;
+.for1php input{
+    background: #FFDE59;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    /* justify-content: space-between; */
+    margin-bottom: 20px;
+    margin-left: -115px;
+    outline: none;
+    border: none;
+}
+.for5php input{
+    background: #FFDE59;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    /* justify-content: space-between; */
+    margin-bottom: 20px;
+    margin-left: -52px;
+    outline: none;
+    border: none;
+}
+.for10php input{
+    background: #FFDE59;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    /* justify-content: space-between; */
+    margin-bottom: 20px;
+    margin-left: 12px;
+    outline: none;
+    border: none;
+}
+.for20php input{
+    background: #FFDE59;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    /* justify-content: space-between; */
+    margin-bottom: 20px;
+    margin-left: 12px;
+    outline: none;
+    border: none;
 }
 .labels{
     display: flex;
     justify-content: space-between;
+    margin-top: -25px;
 }
 
 
