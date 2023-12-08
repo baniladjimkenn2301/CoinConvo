@@ -36,10 +36,10 @@
         <div class="coinsavailable">
             <h2>AVAILABLE COINS</h2>
             <div class="labels">
-                <h3 class="inline-h3">PHP 1</h3>
-                <h3 class="inline-h3">PHP 5</h3>
-                <h3 class="inline-h3">PHP 10</h3>
-                <h3 class="inline-h3">PHP 20</h3>
+                <label for="coin1php">PHP 1</label>
+                <label for="coin5php">PHP 5</label>
+                <label for="coin10php">PHP 10</label>
+                <label for="coin20php">PHP 30</label>
             </div>
             <div class="coin-input-group">
                 <div class="for1php">
@@ -56,7 +56,32 @@
                 </div>
 
             </div>
-           
+        </div>
+        <div class="credit">
+        <label>CREDITS: <span class="php-value"></span></label>
+        </div>
+        <div class="inputUser">
+            <h2>INPUT NUMBER COINS</h2>
+            <div class="inputlabels">
+                <label for="Usercoin1php">PHP 1</label>
+                <label for="Usercoin5php">PHP 5</label>
+                <label for="Usercoin10php">PHP 10</label>
+                <label for="Usercoin20php">PHP 30</label>
+            </div>
+            <div class="coinInput">
+                <div class="U_for1php">
+                    <input type="number" min="0" max="99" class="Usercoin1php">
+                </div>
+                <div class="U_for5php">
+                    <input type="number" min="0" max="99" class="Usercoin5php">
+                </div>
+                <div class="U_for10php">
+                    <input type="number" min="0" max="99" class="Usercoin10php">
+                </div>
+                <div class="U_for20php">
+                    <input type="number" min="0" max="99" class="Usercoin20php">
+                </div>
+            </div>
         </div>
     </div>
     <script src= "https://www.gstatic.com/firebasejs/8.4.1/firebase-app.js"></script>

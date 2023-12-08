@@ -193,7 +193,7 @@ margin-top: -115px;
     display: flex;
     /* justify-content: space-between; */
     margin-bottom: 20px;
-    margin-left: -115px;
+    margin-left: -129px;
     outline: none;
     border: none;
 }
@@ -204,7 +204,7 @@ margin-top: -115px;
     display: flex;
     /* justify-content: space-between; */
     margin-bottom: 20px;
-    margin-left: -52px;
+    margin-left: -69px;
     outline: none;
     border: none;
 }
@@ -215,7 +215,7 @@ margin-top: -115px;
     display: flex;
     /* justify-content: space-between; */
     margin-bottom: 20px;
-    margin-left: 12px;
+    margin-left: -5px;
     outline: none;
     border: none;
 }
@@ -226,7 +226,7 @@ margin-top: -115px;
     display: flex;
     /* justify-content: space-between; */
     margin-bottom: 20px;
-    margin-left: 12px;
+    margin-left: 25px;
     outline: none;
     border: none;
 }
@@ -235,6 +235,69 @@ margin-top: -115px;
     justify-content: space-between;
     margin-top: -25px;
 }
-
-
-
+.labels label{
+    font-weight: bold;
+    margin-top: 10px;
+}
+.credit{
+    display: flex;
+    margin-top: 10px;
+    font-weight: bold;
+}
+/* coinInput side */
+.inputUser{
+    border: 136px;
+    background: #EEB600;
+    border-radius: 30px;
+    padding: 10px 60px;
+}
+.inputUser h2{
+    color: white;
+    font-size: 31px;
+}
+.inputlabels label {
+    display: inline-block;
+    margin-right: 30px;
+    margin-left: 26px;
+    margin-top: -41px;
+    padding: 20px;
+    font-size: x-large;
+    font-weight: 900;
+}
+.coinInput > div {
+    display: inline-block;
+    margin-right: 89px;
+       /* Add space to the right of each div */
+}
+.Usercoin1php {
+    margin-left: 10px;
+    width: 74px;
+    height: 81px;
+    background: #FFFF71;
+    outline: none;
+    border: none;
+    }
+.Usercoin5php { 
+    margin-left: 10px;
+    width: 74px;
+    height: 81px;
+    background: #FFFF71;
+    outline: none;
+    border: none; 
+}
+.Usercoin10php { 
+    margin-left: 10px;
+    width: 74px;
+    height: 81px;
+    background: #FFFF71;
+    outline: none;
+    border: none;
+ }
+.Usercoin20php {     
+    margin-left: 10px;
+    width: 74px;
+    height: 81px;
+    background: #FFFF71;
+    outline: none;
+    border: none; 
+}
