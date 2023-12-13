@@ -191,6 +191,8 @@ margin-top: -115px;
     width: 40px;
     height: 40px;
     display: flex;
+    text-align: center;
+    font-weight: bold;
     /* justify-content: space-between; */
     margin-bottom: 20px;
     margin-left: -129px;
@@ -202,6 +204,8 @@ margin-top: -115px;
     width: 40px;
     height: 40px;
     display: flex;
+    text-align: center;
+    font-weight: bold;
     /* justify-content: space-between; */
     margin-bottom: 20px;
     margin-left: -69px;
@@ -213,6 +217,8 @@ margin-top: -115px;
     width: 40px;
     height: 40px;
     display: flex;
+    text-align: center;
+    font-weight: bold;
     /* justify-content: space-between; */
     margin-bottom: 20px;
     margin-left: -5px;
@@ -224,6 +230,8 @@ margin-top: -115px;
     width: 40px;
     height: 40px;
     display: flex;
+    text-align: center;
+    font-weight: bold;
     /* justify-content: space-between; */
     margin-bottom: 20px;
     margin-left: 25px;
@@ -264,38 +272,56 @@ margin-top: -115px;
     font-size: x-large;
     font-weight: 900;
 }
+
 .coinInput > div {
     display: inline-block;
-    margin-right: 89px;
-       /* Add space to the right of each div */
+    padding: 0px 20px 0px 0px;
+    margin: 0px 5px 0px 0px;
 }
+
 .Usercoin1php {
-    margin-left: 10px;
-    width: 74px;
+    margin: 0px 14px 0px -3px;
+    text-indent: 27px;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 0px 0px 0px 0px;
+    width: 76px;
     height: 81px;
     background: #FFFF71;
     outline: none;
     border: none;
     }
 .Usercoin5php { 
-    margin-left: 10px;
-    width: 74px;
+    margin: 0px 10px 0px 60px;
+    text-indent: 27px;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 0px 0px 0px 0px;
+    width: 76px;
     height: 81px;
     background: #FFFF71;
     outline: none;
     border: none; 
 }
 .Usercoin10php { 
-    margin-left: 10px;
-    width: 74px;
+    margin: 0px 78px 0px 75px;
+    text-indent: 27px;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 0px 0px 0px 0px;
+    width: 76px;
     height: 81px;
     background: #FFFF71;
     outline: none;
     border: none;
- }
+}
 .Usercoin20php {     
-    margin-left: 10px;
-    width: 74px;
+    margin: 0px 0px 0px 4px;
+    text-indent: 27px;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 0px 0px 0px 0px;
+    width: 76px;
     height: 81px;
     background: #FFFF71;
     outline: none;
