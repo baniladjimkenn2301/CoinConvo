@@ -327,3 +327,63 @@ margin-top: -115px;
     outline: none;
     border: none; 
 }
+.usercoinsselector button{
+    padding: 10px 60px;
+    background: #008000;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: #ffffff;
+    border-radius: 30px;
+    margin-top: 20px;
+}
+
+.center-popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* Add other styling as needed */
+}
+.loadingScreen{
+    height: 680px;
+    width: 870px;
+    border-radius: 50px;
+    align-items: center;
+    text-align: center;
+    padding: 20px 30px;
+    background-color: #ffff71;
+    position: absolute;
+    visibility: hidden;
+}
+.loadingScreen img{
+    height: 680px;
+    width: 870px;
+    border-radius: 50px;
+}
+
+.thankYouPopup {
+    height: 680px;
+    width: 870px;
+    border-radius: 50px;
+    align-items: center;
+    flex-direction: column; /* Center contents vertically */
+    text-align: center;
+    padding: 20px 30px;
+    background-color: #ffff71;
+    position: absolute;
+    visibility: hidden;
+}
+.thankYouPopup p{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 40px;
+    font-size: 30px;
+}
+.thankYouPopup img{
+    width: 280px;
+}

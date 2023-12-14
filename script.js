@@ -149,3 +149,90 @@ function updateTotalAmountOnFirebase(newTotalAmount) {
   totalAmountRef.set(newTotalAmount);
 }
 
+// Function to handle the COINCONVO button click
+function handleCoinConvoButtonClick() {
+  // Deplete Max Coins
+  depleteMaxCoins();
+
+  // Show Loading Screen
+  showLoadingScreen();
+
+  // Hide Loading Screen and Show Thank You Popup after a delay
+  setTimeout(function() {
+    hideLoadingScreen();
+    setTimeout(showThankYouPopup, 500); // Small delay for smooth transition
+  }, 3000); // Adjust this delay as needed
+}
+
+// Function to deplete max coins based on user inputs
+function depleteMaxCoins() {
+  // Retrieve user inputs for each coin type
+  var userCoin1php = parseInt(document.getElementById('Usercoin1php').value) || 0;
+  var userCoin5php = parseInt(document.getElementById('Usercoin5php').value) || 0;
+  var userCoin10php = parseInt(document.getElementById('Usercoin10php').value) || 0;
+  var userCoin20php = parseInt(document.getElementById('Usercoin20php').value) || 0;
+
+  // Update Firebase references for each coin type
+  maxCoin1phpRef.transaction(function(currentValue) {
+      return (currentValue || 0) - userCoin1php;
+  });
+  maxCoin5phpRef.transaction(function(currentValue) {
+      return (currentValue || 0) - userCoin5php;
+  });
+  maxCoin10phpRef.transaction(function(currentValue) {
+    return (currentValue || 0) - userCoin10php;
+  });
+  maxCoin20phpRef.transaction(function(currentValue) {
+    return (currentValue || 0) - userCoin20php;
+  });
+
+}
+
+// Function to show the loading screen
+function showLoadingScreen() {
+  var loadingScreen = document.getElementById('loading');
+  if (loadingScreen) {
+    loadingScreen.style.visibility = 'visible';
+    coinSelector.style.visibility = 'hidden';
+    mainContainer.style.visibility = 'hidden';
+  } else {
+    console.error('Loading screen element not found');
+  }
+}
+
+// Function to hide the loading screen
+function hideLoadingScreen() {
+  var loadingScreen = document.getElementById('loading');
+  if (loadingScreen) {
+    loadingScreen.style.visibility = 'hidden';
+  } else {
+    console.error('Loading screen element not found');
+  }
+}
+
+// Function to show the thank you popup
+function showThankYouPopup() {
+  if (thankYouPopup) {
+    thankYouPopup.style.visibility = 'visible';
+  } else {
+    console.error('Thank you popup element not found');
+  }
+}
+let mainContainer = document.getElementById('maincontainer');
+let thankYouPopup = document.getElementById('popup2');
+
+// Function to reset to the main container
+function resetToMainContainer() {
+  var thankYouPopup = document.getElementById('popup2');
+
+  thankYouPopup.style.visibility = 'hidden';
+
+  coinSelector.style.visibility = 'hidden'; // Show the coin selector
+  mainContainer.style.visibility = 'visible'; // Show the main container
+
+  // Reset input fields
+  document.getElementById('Usercoin1php').value = '';
+  document.getElementById('Usercoin5php').value = '';
+  document.getElementById('Usercoin10php').value = '';
+  document.getElementById('Usercoin20php').value = '';
+}

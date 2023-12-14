@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="maincontainer">
+    <div class="maincontainer" id="maincontainer">
         <div class="welcome-text">
             <h2 style="font-family: 'Montserrat Classic'; font-weight: bold;">WELCOME TO</h2>
         </div>
@@ -54,7 +54,6 @@
                 <div class="for20php">
                     <input type="number" class="coin-20php" id="coin20php" readonly>
                 </div>
-
             </div>
         </div>
         <div class="credit">
@@ -83,7 +82,21 @@
                 </div>
             </div>
         </div>
+        <button type="button" onclick="handleCoinConvoButtonClick()">COINCONVO</button>
+        <!-- Loading Screen -->
+       <div class="loadingScreen" id="loading">
+            <img src="Assets/CoinConvoBloackDiagram.gif" alt="Loading...">
+        </div>
+
+        <!-- Thank You Popup -->
+        <div class="thankYouPopup" id="popup2">
+            <img src="Assets/logo.png">
+            <p>Thank you for using CoinConvo Denomination Changer!</p>
+            <button onclick="resetToMainContainer()">Back to Main</button>
+        </div>
     </div>
+
+
     <script src= "https://www.gstatic.com/firebasejs/8.4.1/firebase-app.js"></script>
     <script src= "https://www.gstatic.com/firebasejs/8.4.1/firebase-database.js"></script>
     <script src= "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
